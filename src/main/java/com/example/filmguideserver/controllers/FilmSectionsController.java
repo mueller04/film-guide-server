@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -18,6 +17,6 @@ public class FilmSectionsController {
     public List<FilmSection> getFilmSections() {
         return List.of(
                 new FilmSection("a",List.of("foo", "bar")),
-                new FilmSection("B",List.of("bar", "baz")));
+                new FilmSection("b",List.of("bar", "baz")));
     }
 }
